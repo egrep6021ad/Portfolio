@@ -2,7 +2,7 @@ import './index.scss'
 import { useState } from 'react'
 import { Link } from 'react-router-dom'
 import AnimatedLetters from '../AnimatedLetters'
-import Logo from './Logo'
+
 const Home = () => {
     const [letterClass, ] = useState('text-animate')
     const softArray = ['S','o','f','t','w','a','r','e',' ']
@@ -12,7 +12,7 @@ const Home = () => {
 
     return(
         <div className="container home-page">
-            <Logo />
+    
             <div className="text-zone"> 
             <h1>
                 <AnimatedLetters letterClass={letterClass}
