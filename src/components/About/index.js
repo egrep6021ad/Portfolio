@@ -7,12 +7,14 @@ const About = () => {
             <div className='text-area'>
                 <h1>Khalfani Bozeman</h1>
                 <h2>Subtitle</h2>
-                <main>
-                    <body>
+               
+      
+                    <main>
                        <p>hello</p>
                        <img src='dffs' alt='what' />
-                    </body>
-                </main>
+                    </main>
+               
+           
                 <footer>
                        <p>hello 1</p>
                        <p>hello 2</p>
@@ -20,6 +22,7 @@ const About = () => {
                        <p>hello 4</p>
                        <p>hello 5</p>
                 </footer>
+                
             </div>
         </div>
         </>

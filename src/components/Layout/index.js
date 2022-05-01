@@ -1,10 +1,18 @@
 import './index.scss';
 import Sidebar from '../Sidebar';
 import { Outlet } from 'react-router-dom';
+import NavBar from '../NavBar';
+const frame = window.innerWidth;
+//console.log(frame)
 
 const Layout = () => (
      <div className="App">
+      { frame > 500 ?
       <Sidebar />
+         :
+      <NavBar />
+      }
+      
       <div className="page">
         <span className="tags top-tags">&lt;body&gt;</span>
           <Outlet />

@@ -1,0 +1,41 @@
+.mobile-nav {
+    background-color: black;
+    height:10vh;
+    display: flex;
+    align-items: center;
+
+    .logo {
+        display:block;
+        img {
+        width:100px;
+        height:auto;
+        }
+    }
+}
+    .hamburger-button {
+        margin-left:55%;
+        background-color: #EAE7D6;
+        border-radius: 10px;
+        height:50px;
+        width: 50px;
+    }
+    nav {
+        margin-left:7px;
+        width:100vw;
+        zoom: 190%;
+
+
+        .home-button {
+            margin-left:20px;
+
+        }
+        .about-button {
+            margin-left:20px;
+        }
+        .contact-button {
+            margin-left: 20px;
+        }
+        .portfolio-button {
+            margin-left:20px;
+        }
+    }   
