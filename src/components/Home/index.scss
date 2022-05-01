@@ -1,22 +1,43 @@
+@keyframes fadeInTitle {
+  from { opacity: 0; } 
+  to { opacity: 1;} 
+ }
+@keyframes fadeInSub {
+  from { opacity: 0; margin-left: 30%; } 
+  to { opacity: 0.6; margin-left: 0%;} 
+ }
+ 
+ @keyframes thirdTitle {
+  from { opacity: 0; margin-left:15%; } 
+  to { opacity: 1; margin-left:0%; } 
+ }
+
+ @keyframes contact {
+  from { opacity: 0; margin-left:20%; } 
+  to { opacity: 0.6; margin-left:0%; } 
+ }
+
 .home-page {
     .text-zone {
       position: absolute;
-      left: 13%;
-      top: 43%;
+      left: 45%;
+      top: 55%;
       transform: translateY(-50%);
       width: 45%;
       max-height: 90%;
     }
-  
+
     h1 {
       color: #181818;
-      opacity: 0.8;
       font-size: 56px;
       line-height: 53px;
       margin: 0;
       font-family: 'Coolvetica';
+      animation-name: fadeInTitle;
       font-weight: 400;
-  
+      animation-duration: 4s;
+
+
       &:before {
         content: '<h1>';
         font-family: 'La Belle Aurore', cursive;
@@ -36,10 +57,9 @@
         position: absolute;
         margin-top: 18px;
         margin-left: 20px;
-        animation: fadeIn 1s 1.7s backwards;
+        animation: ease-in 1s 1.7s backwards;
         opacity: 0.6;
       }
-  
       img {
         margin-left: 20px;
         opacity: 0;
@@ -49,15 +69,23 @@
         animation-delay: 1.4s;
       }
     }
-  
     h2 {
       color: #8d8d8d;
-      margin-top: 20px;
+      margin-top: 35px;
       font-weight: 400;
       font-size: 11px;
+      margin-left: 0%;
       font-family: sans-serif;
       letter-spacing: 3px;
-      animation: fadeIn 1s 1.8s backwards;
+      animation: thirdTitle 4s backwards;
+    }
+
+    h3 {
+      animation: fadeInSub 3s forwards ;
+      opacity: 0.6;
+      font-size: 14px;
+      margin-left: 0%;
+      letter-spacing: 2px;
     }
   
     .flat-button {
@@ -71,11 +99,12 @@
       border: 1px solid #444;
       margin-top: 25px;
       float: left;
-      animation: fadeIn 1s 1.8s backwards;
+      animation: contact 4s backwards;
       white-space: nowrap;
+      opacity: 0.6;
   
       &:hover {
-        background: #FFFFFF;
+        background: linear-gradient(to bottom right, white, rgb(234, 234, 216));
         color: #444;
       }
     }
