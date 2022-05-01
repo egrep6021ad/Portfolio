@@ -1,0 +1,41 @@
+.text-area{
+    margin :15%;
+    
+    h1 {
+        margin-top:-5%;
+        margin-left:5%;
+        font-size: 52px;
+        line-height: 53px;
+        letter-spacing: 4px;
+        font-family: 'Coolvetica';
+        color: white;
+    }
+    h2 {
+        margin-left:5%;
+        color: white;
+    }
+    body{
+        p{
+            margin-left:5%;
+             font-size: 17px;
+        }
+        img {
+            position: absolute;
+            margin-left:60%;
+            margin-top:25%;
+            top:0;
+        }
+    }
+    footer {
+        position:absolute;
+        display:flex;
+        flex-direction: row;
+        bottom:0;
+        width:60%;
+        padding:8%;
+
+        p{
+            padding: 5%;
+        }
+    }
+}

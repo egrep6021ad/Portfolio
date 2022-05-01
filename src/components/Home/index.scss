@@ -4,7 +4,7 @@
  }
 @keyframes fadeInSub {
   from { opacity: 0; margin-left: 30%; } 
-  to { opacity: 0.6; margin-left: 0%;} 
+  to { opacity: 0.6; margin-left: 2%;} 
  }
  
  @keyframes thirdTitle {
@@ -20,7 +20,7 @@
 .home-page {
     .text-zone {
       position: absolute;
-      left: 45%;
+      left: 35%;
       top: 55%;
       transform: translateY(-50%);
       width: 45%;
