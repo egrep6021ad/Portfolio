@@ -5,9 +5,9 @@
   }
 
 .main-area {
-    overflow-y: scroll;
+    
     margin-left:10%;
-    margin-top:20%;
+    margin-top:27%;
 
     h1 {
         margin: 0;
@@ -18,9 +18,9 @@
         display:block;
         margin-left: 67%;
         font-family: 'La Belle Aurore', cursive;
-        margin-top:-25%;
+        margin-top:-30%;
         animation: bounceIn 1.5s backwards;
-        //transform: rotate3d(-0.3, 1, 0, 180deg);
+        /*transform: rotate3d(-0.3, 1, 0, 180deg);*/
         img {
             height:80px;
             right:0;
@@ -30,18 +30,12 @@
     }
 
     main {
-        font-size:18px;
-        margin: 12% 30px 20px 2px;
-        max-height:42vh;
-
+        line-height: 150%;
+        font-size:180%;
+        margin: 17% 30px 20px 2px;
+        text-align: center;
+    
     }
 
-    footer {
-        right:0;
-        margin-right:45%;
-        position: absolute;
-        bottom: 0;
-        margin-bottom:21%;
-        
-    }
+
 }   
