@@ -19,16 +19,13 @@
 
 // MObile:
 .home-page {
-  height:100vh;
+  height:90vh;
   width:50%;
   display: flex;
   margin-left: 20%;
   flex-direction: column;
   justify-content: center;
-  .home-text-zone {
 
-
-  }
 
   h1 {
     color: #181818;
@@ -117,9 +114,9 @@
 //Web:
  @media (min-width: 500px) {
 .home-page {
-    .text-zone {
+    .home-text-zone {
       position: absolute;
-      left:35%;
+      left:40%;
       top: 55%;
       transform: translateY(-50%);
       width: 45%;

@@ -1,29 +1,25 @@
 import './index.scss'
+import headshot from '../../../assets/images/headshot.png'
 
 const Web = () => {
     return(
         <>
-        <div className='container about-page'>
-            <div className='text-area'>
-                <h1>Khalfani Bozeman</h1>
-                <h2>Subtitle</h2>
-               
-      
-                    <main>
-                       <p>hello</p>
-                       <img src='dffs' alt='what' />
-                    </main>
-               
-           
-                <footer>
-                       <p>hello 1</p>
-                       <p>hello 2</p>
-                       <p>hello 3</p>
-                       <p>hello 4</p>
-                       <p>hello 5</p>
-                </footer>
-                
-            </div>
+        <div className='web-main-area'>
+           <h1>  Full-Stack Developer </h1>
+            <h2> <img src={headshot} alt="avatar" /> </h2> 
+           <main>
+           f letters, as to 
+           using 'Content here, content here', making it look like 
+           readable English. Many desktop publishing packages and web 
+           page editors now use Lorem Ipsum as their default model text,nd a search for 
+           'lorem ipsum' will uncover many web sites
+            still in their infancy. Various versions have evolved END 
+           </main>
+
+           <footer>
+        
+           </footer>
+
         </div>
         </>
     )

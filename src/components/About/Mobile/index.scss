@@ -5,7 +5,6 @@
   }
 
 .main-area {
-    
     margin-left:10%;
     margin-top:27%;
 
@@ -32,8 +31,9 @@
     main {
         line-height: 150%;
         font-size:180%;
-        margin: 17% 30px 20px 2px;
+        margin: 10% 30px 20px 2px;
         text-align: center;
+        animation: bounceIn 1.5s backwards;
     
     }
 

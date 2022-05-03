@@ -1,41 +1,35 @@
-.text-area{
+.web-main-area{
     margin :15%;
+    position: block;
+
     
     h1 {
-        margin-top:-5%;
-        margin-left:5%;
-        font-size: 52px;
-        line-height: 53px;
-        letter-spacing: 4px;
-        font-family: 'Coolvetica';
-        color: white;
+        font-family: 'La Belle Aurore', cursive;
+        font-size: 46px;
+        margin-left: 12%;
     }
-    h2 {
-        margin-left:5%;
-        color: white;
-    }
-    body{
-        p{
-            margin-left:5%;
-             font-size: 17px;
-        }
+    h2{
+
         img {
             position: absolute;
-            margin-left:60%;
-            margin-top:25%;
-            top:0;
+            height:130px;
+            width:130px;
+            margin-top: -15%;
+            margin-right:12%;
+            border-radius: 90px;
+            right:0;
+            animation: bounceIn 1.7s backwards;
+           
         }
     }
-    footer {
-        position:absolute;
-        display:flex;
-        flex-direction: row;
-        bottom:0;
-        width:60%;
-        padding:8%;
+    main {
+        position: absolute;
+        display: flex;
+        font-size: 20px;
+        animation: bounceIn 1.7s backwards;
+        text-align: center;
+        padding:2% 15% 10% 10%;
+        line-height:40px;
 
-        p{
-            padding: 5%;
-        }
     }
 }

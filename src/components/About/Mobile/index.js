@@ -1,10 +1,10 @@
 import './index.scss'
-import logo from '../../../assets/images/logoWhole.png'
+import headshot from '../../../assets/images/headshot.png'
 const Mobile = () => {
     return(
         <div className='main-area'>
            <h1>  Full-Stack <br />Developer </h1>
-            <h2> <img src={logo} alt="avatar" /> </h2> 
+            <h2> <img src={headshot} alt="avatar" /> </h2> 
            <main>
            f letters, as to 
            using 'Content here, content here', making it look like 
