@@ -1,3 +1,18 @@
+@keyframes left {
+    0% {  margin-top:-150rem; opacity:0;}
+    100% { margin-bottom: 0; opacity: 1; }  
+}
+@keyframes right {
+    0% { margin-top:100rem; }
+    100% { margin-top: 5%; }  
+}
+@keyframes one {
+    0% { margin-bottom: -100%;}
+    100% { margin-bottom: 0%;}
+}
+
+
+
 .contact-container {
     display: flex;
     flex-direction: row;
@@ -6,20 +21,33 @@
     justify-content: space-evenly;
     .left {
         font-family: 'La Belle Aurore', cursive;
-        margin-left:-12%;
-        margin-top: 3%;
+        margin-top: 7%;
+        animation: 1.5s left backwards;
+        margin-left: 8%;
         h1{
-            align-content: center;
-            margin-left: 17%;
-            font-size: 600%;
+            text-align: center;
+            margin-left: 1%;
+            font-size: 500%;
             letter-spacing: 10px;
         }
-        .input-form{
+        .input-container{
             margin-top:-10%;
             display: flex;
-            justify-content: space-evenly;
-            width:100%;
-            .input-begin {
+            justify-content: space-between;
+            width:90%;
+            
+            .name {
+                width:50%;
+                text-align: center;
+                height: 2rem !important;
+                border-color: #444 !important;
+                border-radius: 7px;
+
+            }
+            .email {
+                width: 50%;
+                margin-left: 3%;
+                margin-right: -2%;
                 text-align: center;
                 height: 2rem !important;
                 border-color: #444 !important;
@@ -28,29 +56,29 @@
             }
         }
         .input-subject{
-            width:95%;
+            width:90%;
             text-indent: 5px;
             margin-top:3%;
-            margin-left:0.8%;
             height:2rem;
             border-radius: 7px;
             z-index: 3;
             border-color: #444
         }
         .input-body {
-            width:94%;
+            width:90%;
             text-indent: 5px;
+            font-size: 16px;
             padding: 5px;
             resize: none;
             height: 40%;
             margin-top:4%;
-            margin-left:0.8%;
             border-radius: 7px;
             border-color: #444;
             border-width:2px !important;
             z-index: 3;
+
         }
-        .flat-button {
+        .send-button {
             color: #FFFFFF;
             font-family: Arial, Helvetica, sans-serif;
             background-color: #444;
@@ -58,41 +86,49 @@
             height: 35px;
             width: 100px;
             border-radius: 5px;
-            margin-right: 2%;
-            margin-top:1.7%;
-            
-           
+            margin-right: 7.5%;
+            margin-top:1%;
+            border-color: silver;
           }
-        
     }
     .right{
-        color:blue;
-        align-self: center;
-        .info-map{
-            color:black;
-            font-family: Arial, Helvetica, sans-serif;
-            
-        }
-        .map-wrap {
-            background: rgba(8, 253, 216, 0.1);
-       ;
-            width: 53%;
-            height: 115%;
-           
-          }
-          
-          .leaflet-container {
-            position: relative;
-            width: 100%;
-            height: 100%;
-            opacity: 0;
-            animation: backInRight 1s 1.2s;
-            animation-fill-mode: forwards;
-          }
-          
-          
-
-          
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 14px;
+        margin-top: 5%;
+        animation: 1.5s right backwards;
+        display: flex;
+        width: 25%;
+        margin-right: 7%;
+        flex-direction: column;
+        position: block;
         
+        h1{
+            margin-top:35%;
+            font-family: 'La Belle Aurore', cursive;
+            margin-left: 7%;
+        }
+
+        img {
+            position: absolute;
+            align-self: flex-end;
+            height:12%;
+            width:8%;
+            border-radius: 100%;
+            animation: bounceIn 1.3s backwards;
+            margin-top: 8%;
+        }
+      
+        .one{
+            
+            height: 12%;
+            padding-left: 0%;
+            margin-right: -15%;
+
+        }
+        footer{
+            bottom:0;
+            position:absolute;
+            margin-bottom: 6%;
+        }
     }
 }
