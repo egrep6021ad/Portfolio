@@ -4,10 +4,6 @@ import { Outlet } from 'react-router-dom';
 import NavBar from '../NavBar';
 
 const frame_width = window.innerWidth;
-const frame_height = window.innerHeight
-
-//console.log(frame)
-
 const Layout = () => (
      <div className="App">
       { frame_width > 500 ?

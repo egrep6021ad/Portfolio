@@ -1,35 +1,59 @@
+@keyframes mySvg {
+    0%{
+        stroke-dashoffset:7011;
+    }    
+    100%{
+        stroke-dashoffset: 0;
+    }
+}
 .web-main-area{
-    margin :15%;
-    position: block;
+    margin :10%;
+    position: absolute;
 
     
     h1 {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        letter-spacing: 17px;
         font-family: 'La Belle Aurore', cursive;
-        font-size: 46px;
-        margin-left: 12%;
-    }
-    h2{
-
+        font-size: 465%;
+        margin-left: 10%;
+        text-shadow: 10;
+        box-shadow: inset;
+     
         img {
-            position: absolute;
-            height:130px;
-            width:130px;
-            margin-top: -15%;
-            margin-right:12%;
-            border-radius: 90px;
-            right:0;
-            animation: bounceIn 1.7s backwards;
-           
+            height:17%;
+            width:17%;
+            border-radius: 100%;
+            animation: bounceIn 1.3s backwards;
+            margin-left: 3%;
+            margin-top: -1%;
         }
     }
-    main {
-        position: absolute;
-        display: flex;
-        font-size: 20px;
-        animation: bounceIn 1.7s backwards;
-        text-align: center;
-        padding:2% 15% 10% 10%;
-        line-height:40px;
-
+    h2 {
+        height: 20px;
+        margin-top: -5%;
+        width: 100%;
+       #svg {
+   
+        stroke-dasharray:7011;
+        animation: 15s mySvg cubic-bezier(1,-0.04,.32,.7) forwards; ;
+        margin-left: 30%;
+       }
+    
     }
+
+    main {
+        position: relative;
+        width:65%;
+        height: 50%;
+        font-size: 160%;
+        animation: bounceIn 1.3s backwards;
+        text-align: center;
+        padding-left: 15%;
+        margin:5%;
+        line-height:145%;
+    }
+
 }
