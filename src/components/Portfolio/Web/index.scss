@@ -1,0 +1,15 @@
+.portfolio-container{
+    display: flex;
+    height: 100%;
+    width: auto;
+    background-color: black;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    h1{
+      
+    }
+    canvas{
+        margin-left: 5%;
+    }
+}

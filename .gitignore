@@ -4,7 +4,8 @@
 /node_modules
 /.pnp
 .pnp.js
-
+assets
+logo.png
 # testing
 /coverage
 
@@ -17,6 +18,8 @@
 .env.development.local
 .env.test.local
 .env.production.local
+.gitignore
+.idea
 
 npm-debug.log*
 yarn-debug.log*

@@ -1,5 +1,6 @@
 import './index.scss'
 import headshot from '../../../assets/images/headshot.png'
+
 const Web = () => {
     return(
         <div className='contact-container'>
@@ -17,7 +18,7 @@ const Web = () => {
             </div>
 
             <div className='right'>
-            <h1>Full-Stack <br />Developer</h1> 
+            <h1>Full-Stack Developer</h1> 
             <img src={headshot} alt="avatar" /> 
                 <p className='one'>lkndlknd dlkndlkn dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlndd dddkjlkjlslldddklkndlkn dlkndlknd dlkndlkn sn dh lhld ddddklkndlkn dlkndlknd dlkndlkn dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlndd dddkjlkjlsssn dh lhld ddddklkndlkn dlkndlknd dlkndlkn dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlndd dddkjlkjlslldddklkndlkn dlkndlknd dlkndlkn sn dh lhld ddddklkndlkn dlkndlknd dlkndlkn dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlndd dddkjlkjlslldddklkndlkn dlkndlknd dlkndlk dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlkn dlkndlknd dlkndlnddlndd dddkjlkjlsl</p>
             </div>

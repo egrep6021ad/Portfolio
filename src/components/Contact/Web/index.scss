@@ -13,20 +13,30 @@
 
 
 
+
 .contact-container {
     display: flex;
     flex-direction: row;
     width: 100%;
     height: 100%;
     justify-content: space-evenly;
+    background-image: 
+    url('https://images.unsplash.com/photo-1649810284947-ffad1fa44634?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1160&q=80'); 
+    background-size: cover; 
+    background-repeat: no-repeat;
+    background-position: absolute;
+
+  
+    
     .left {
         font-family: 'La Belle Aurore', cursive;
-        margin-top: 7%;
+        margin-top: 10%;
+        margin-left: 5.5%;
         animation: 1.5s left backwards;
-        margin-left: 8%;
         h1{
+            color: aliceblue;
             text-align: center;
-            margin-left: 1%;
+            margin-left: -50%;
             font-size: 500%;
             letter-spacing: 10px;
         }
@@ -93,33 +103,38 @@
     }
     .right{
         font-family: Arial, Helvetica, sans-serif;
-        font-size: 14px;
+        font-size: 16px;
         margin-top: 5%;
         animation: 1.5s right backwards;
         display: flex;
         width: 25%;
-        margin-right: 7%;
+        color:#FFFFFF;
+        margin-right: 0%;
         flex-direction: column;
         position: block;
         
         h1{
-            margin-top:35%;
+            width: 100%;
+            margin-top:50%;
             font-family: 'La Belle Aurore', cursive;
-            margin-left: 7%;
+            margin-left: 2%;
+            font-size: 36px;
         }
 
         img {
             position: absolute;
             align-self: flex-end;
-            height:12%;
-            width:8%;
+            height:15%;
+            width:7.5%;
             border-radius: 100%;
             animation: bounceIn 1.3s backwards;
-            margin-top: 8%;
+            margin-top: 7.5%;
+            margin-right: -4%;
+            
         }
       
         .one{
-            
+            margin-top:20px;
             height: 12%;
             padding-left: 0%;
             margin-right: -15%;
