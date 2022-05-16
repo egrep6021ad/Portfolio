@@ -1,6 +1,6 @@
-@keyframes drop_in {
-    from{margin-top:-100%;}
-    to{margin-top: 5% ;}    
+@keyframes my_stuff{
+    from{margin-left:50rem;}
+    to{margin-left: 0rem ;}    
 }
 .portfolio-container{
     display: flex;
@@ -25,7 +25,7 @@
     justify-content: space-evenly;
     flex-direction: row;
     margin-top: 2.5%;
-    animation: bounceIn 1.2s backwards;
+    animation: my_stuff 2s backwards;
 }
 .arrows{
     display: flex;
@@ -43,6 +43,7 @@
         &:hover{
             transform: scale(1.2);
             opacity: 1;
+            cursor: pointer;
             color: white;
             z-index: 2;
         }
@@ -59,8 +60,10 @@
         &:hover{
             transform: scale(1.2);
             opacity: 1.5;
+            cursor: pointer;
             color: white;
             z-index: 2;
+            
         }
         &:active{
             color:#444;
@@ -132,7 +135,7 @@
     }
     &:hover{
         transform: scale(1.1);
-        box-shadow: 10px 10px 10px black;
+        box-shadow: 2px 2px 5px 3px rgb(241, 230, 230);
         .card-body{
             height: 50vh;
             margin-top: -5%;
