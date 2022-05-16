@@ -25,14 +25,14 @@ const Sidebar = () =>  (
         <ul>
             <li>
                 <a 
-                href='https://www.linkedin.com/in/khalfani-b-ab51b31aa' >
-                    <LinkedInIcon />
+                href='https://github.com/egrep6021ad' >
+                    <GitHubIcon /> 
                 </a>
             </li>
             <li>
                 <a 
                 href='https://github.com/egrep6021ad' >
-                    <GitHubIcon /> 
+                    <LinkedInIcon /> 
                 </a>
             </li>
         </ul>

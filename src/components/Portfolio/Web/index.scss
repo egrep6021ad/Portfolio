@@ -48,6 +48,7 @@
         }
         &:active{
             color:#444;
+            transform: scale(0.7);
         }
     }
     .left-arrow{
@@ -63,6 +64,7 @@
         }
         &:active{
             color:#444;
+            transform: scale(0.7);
         }
     }
 }
@@ -130,6 +132,7 @@
     }
     &:hover{
         transform: scale(1.1);
+        box-shadow: 10px 10px 10px black;
         .card-body{
             height: 50vh;
             margin-top: -5%;

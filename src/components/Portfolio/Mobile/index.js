@@ -1,6 +1,4 @@
 import './index.scss'
-const frame = window.innerWidth
-
 const Mobile = () => {
     return(
         <div>
