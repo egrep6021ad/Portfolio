@@ -2,7 +2,8 @@ import './index.scss';
 import { Link, NavLink } from 'react-router-dom';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faHome, faEnvelope, faCamera } from '@fortawesome/free-solid-svg-icons';
-import { faGithub, faLinkedin, } from '@fortawesome/free-brands-svg-icons';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import logo from '../../assets/images/logo.png'
 const Sidebar = () =>  (
      <div className='nav-bar'>
@@ -25,13 +26,13 @@ const Sidebar = () =>  (
             <li>
                 <a 
                 href='https://www.linkedin.com/in/khalfani-b-ab51b31aa' >
-                    <FontAwesomeIcon icon={faLinkedin}  />
+                    <LinkedInIcon />
                 </a>
             </li>
             <li>
                 <a 
                 href='https://github.com/egrep6021ad' >
-                    <FontAwesomeIcon icon={faGithub}  />
+                    <GitHubIcon /> 
                 </a>
             </li>
         </ul>

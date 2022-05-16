@@ -1,39 +1,55 @@
 import './index.scss'
-import * as THREE from 'three';
-import { Canvas, useLoader } from '@react-three/fiber'
-import { OrbitControls, Sky } from "@react-three/drei"
-import { Suspense } from 'react'
-const Box = () => (
-    <mesh position={[0,0,0]}>
-    <boxBufferGeometry />
-    <meshStandardMaterial attach="material" color="green" />
-    </mesh>
-    
-)
-const Plane = () => (
-    <mesh position={[0,0,0]} rotation={[-Math.PI/ 2, 0, 0]}>
-    <planeBufferGeometry attach="geometry" args={[2000,2000]} />
-    <meshStandardMaterial attach="material" color="lightblue" />
-    </mesh>
-)
-
-
+import React, { useEffect, useState} from 'react'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight,faArrowLeft} from '@fortawesome/free-solid-svg-icons';
+import Divider from '@mui/material/Divider';
+import { height } from '@mui/system';
+import ShareIcon from '@mui/icons-material/Share';
+import { Button } from '@mui/material';
+import Card from './Card'
 const Web = () => {
+    const [state, setState] = useState(0)
+    const [myBackground, setMyBackground] = useState('yellow')
+    const handleEvent = e => {
+        let element= e.target
+        //console.log(element.scrollHeight )
+        console.log(element.scrollTop )
+        element.scrollTop > 10 ? setMyBackground('https://images.unsplash.com/photo-1652528250424-d2018d05158c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80') : setMyBackground('https://images.unsplash.com/photo-1652584067032-b47978f7b7a6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80')
+        //if(element.scrollHeight - element.scrollTop >= element.clientHeight)
+         //   setState(state+1)
+        //console.log(element.clientHeight)
+        //console.log(state)
+    } 
+    useEffect(()=>{
+        //window.addEventListener("resize",handleEvent)
+        //console.log(state)
+        //return ()=> {
+          //  window.removeEventListener("resize",handleEvent)
+       // }
+    },[handleEvent])
+    
     return(
-        <div className='portfolio-container'>
-         <Canvas
-         camera={{position : [75,20,0], fov: 80}}
-       
-         >
-            <ambientLight intensity={0.5} />
-            <OrbitControls />
-            <Sky />
-            <Box />
-            <Plane />
-            
-        </Canvas>
-
+     <div className="portfolio-container">
+        <div className='portfolio-showcase'>
+            <Card title='title'/>
+            <Card title='title' style='70%'/>
+            <Card title='title'/>
         </div>
+        <div className='arrows'>
+        <div className='left-arrow'>
+            <FontAwesomeIcon className='active' icon={faArrowLeft} size='6x' />
+        </div>
+        <div className='right-arrow'>
+            <FontAwesomeIcon className='active' icon={faArrowRight} size='6x' />
+        </div>
+        </div>
+    </div>
+
     )
 }
 export default Web
+/*
+ <div className='text-area-portfolio' 
+            style={{ backgroundImage: `url('${myBackground}')` }} 
+            onScroll={handleEvent}>
+*/
