@@ -30,11 +30,6 @@ http.createServer(app).listen(http_port,() => {
 });
 
 
-//http.createServer((req,res) => {
-	//res.writeHead(301, { "Location":"https://foothillsflowyoga.com"})
-	//res.end();
-//	console.log("running on port 80");
-//}).listen(80);
 
 //https.createServer(options, app).listen(https_port,() => {
 //    console.log('Server listening on https port ' + https_port + " ,And http is on: " + http_port);
