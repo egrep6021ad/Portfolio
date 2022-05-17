@@ -11,7 +11,7 @@ logo.png
 
 # production
 /build
-
+/server.js
 # misc
 .DS_Store
 .env.local
